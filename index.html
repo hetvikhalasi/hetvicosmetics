@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty | Premium Skincare & Cosmetics</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Glow <span>Beauty</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Shop</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <i class="fas fa-moon" id="theme-toggle"></i>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content animate-up">
+                <h1>Reveal Your <br>Natural Glow</h1>
+                <p>Premium skincare and beauty products crafted for radiant confidence.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#categories" class="btn btn-secondary">Explore Collection</a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=800" alt="Cosmetic Hero">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400" alt="Skincare">
+                    <div class="cat-overlay">
+                        <h3>Skincare</h3>
+                        <button class="btn-sm">Shop</button>
+                    </div>
+                </div>
+                <!-- Repeat for other 3 categories -->
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=400" alt="Makeup">
+                    <div class="cat-overlay"><h3>Makeup</h3><button class="btn-sm">Shop</button></div>
+                </div>
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1527799822367-a233b47b0ee6?auto=format&fit=crop&q=80&w=400" alt="Hair">
+                    <div class="cat-overlay"><h3>Hair Care</h3><button class="btn-sm">Shop</button></div>
+                </div>
+                <div class="cat-card">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=400" alt="Fragrance">
+                    <div class="cat-overlay"><h3>Fragrances</h3><button class="btn-sm">Shop</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="products" class="products section">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="product-grid" id="product-list">
+                <!-- Products will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="container text-center">
+            <h2>Summer Beauty Sale</h2>
+            <p>Up to 50% OFF</p>
+            <div id="countdown" class="countdown">
+                <div><span id="days">00</span><small>Days</small></div>
+                <div><span id="hours">00</span><small>Hours</small></div>
+                <div><span id="minutes">00</span><small>Mins</small></div>
+                <div><span id="seconds">00</span><small>Secs</small></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Info -->
+    <section id="contact" class="contact section">
+        <div class="container contact-grid">
+            <form id="contact-form">
+                <h3>Get In Touch</h3>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-phone"></i> +91 9714685754</p>
+                <p><i class="fas fa-envelope"></i> sumitcoder@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Owned by RK Enterprise Pvt Ltd</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Glow Beauty</h3>
+                <p>Luxurious cosmetics for everyone.</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Glow Beauty by RK Enterprise Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
